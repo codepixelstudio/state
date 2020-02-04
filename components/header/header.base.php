@@ -5,9 +5,11 @@
 ?>
 
 <!-- header -->
-<header class="site-header" role="banner">
+<header class="state-header" role="banner">
 
-    state
+    <?php get_template_part( 'components/brand/brand.rams' ); ?>
+
+    <?php get_template_part( 'components/brand/brand.state' ); ?>
 
 </header>
 <!-- END header -->

@@ -1,73 +1,72 @@
-//  state.theme settings.
-//  Based on Foundation for Sites v6.4.3
-//  -----------------------------
-//
-//  Table of Contents:
-//
-//   1. Global
-//   2. Breakpoints
-//   3. The Grid
-//   4. Base Typography
-//   5. Typography Helpers
-//   6. Abide
-//   7. Accordion
-//   8. Accordion Menu
-//   9. Badge
-//  10. Breadcrumbs
-//  11. Button
-//  12. Button Group
-//  13. Callout
-//  14. Card
-//  15. Close Button
-//  16. Drilldown
-//  17. Dropdown
-//  18. Dropdown Menu
-//  19. Flexbox Utilities
-//  20. Forms
-//  21. Label
-//  22. Media Object
-//  23. Menu
-//  24. Meter
-//  25. Off-canvas
-//  26. Orbit
-//  27. Pagination
-//  28. Progress Bar
-//  29. Prototype Arrow
-//  30. Prototype Border-Box
-//  31. Prototype Border-None
-//  32. Prototype Bordered
-//  33. Prototype Display
-//  34. Prototype Font-Styling
-//  35. Prototype List-Style-Type
-//  36. Prototype Overflow
-//  37. Prototype Position
-//  38. Prototype Rounded
-//  39. Prototype Separator
-//  40. Prototype Shadow
-//  41. Prototype Sizing
-//  42. Prototype Spacing
-//  43. Prototype Text-Decoration
-//  44. Prototype Text-Transformation
-//  45. Prototype Text-Utilities
-//  46. Responsive Embed
-//  47. Reveal
-//  48. Slider
-//  49. Switch
-//  50. Table
-//  51. Tabs
-//  52. Thumbnail
-//  53. Title Bar
-//  54. Tooltip
-//  55. Top Bar
-//  56. Xy Grid
+//  state.theme settings
 
-@import 'util/util';
-@import 'globals/colors';
+// ===========================================================================================
+// table of contents
+// ===========================================================================================
 
+    //   1. globals
+    //   2. breakpoints
+    //   3. the grid
+    //   4. Base Typography
+    //   5. Typography Helpers
+    //   6. Abide
+    //   7. Accordion
+    //   8. Accordion Menu
+    //   9. Badge
+    //  10. Breadcrumbs
+    //  11. Button
+    //  12. Button Group
+    //  13. Callout
+    //  14. Card
+    //  15. Close Button
+    //  16. Drilldown
+    //  17. Dropdown
+    //  18. Dropdown Menu
+    //  19. Flexbox Utilities
+    //  20. Forms
+    //  21. Label
+    //  22. Media Object
+    //  23. Menu
+    //  24. Meter
+    //  25. Off-canvas
+    //  26. Orbit
+    //  27. Pagination
+    //  28. Progress Bar
+    //  29. Prototype Arrow
+    //  30. Prototype Border-Box
+    //  31. Prototype Border-None
+    //  32. Prototype Bordered
+    //  33. Prototype Display
+    //  34. Prototype Font-Styling
+    //  35. Prototype List-Style-Type
+    //  36. Prototype Overflow
+    //  37. Prototype Position
+    //  38. Prototype Rounded
+    //  39. Prototype Separator
+    //  40. Prototype Shadow
+    //  41. Prototype Sizing
+    //  42. Prototype Spacing
+    //  43. Prototype Text-Decoration
+    //  44. Prototype Text-Transformation
+    //  45. Prototype Text-Utilities
+    //  46. Responsive Embed
+    //  47. Reveal
+    //  48. Slider
+    //  49. Switch
+    //  50. Table
+    //  51. Tabs
+    //  52. Thumbnail
+    //  53. Title Bar
+    //  54. Tooltip
+    //  55. Top Bar
+    //  56. Xy Grid
 
+    @import 'util/util';
+    @import 'globals/colors';
 
+// ===========================================================================================
 // 1. globals
-// ---------
+// ===========================================================================================
 
     $global-font-size: 100%;
 
@@ -97,7 +96,7 @@
 
     $body-background: $white;
 
-    $body-font-color: $black;
+    $body-font-color: $app05;
 
     $body-font-family: $industry, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
@@ -133,10 +132,9 @@
 
     @include add-foundation-colors;
 
-
-
+// ===========================================================================================
 // 2. breakpoints
-// --------------
+// ===========================================================================================
 
     $breakpoints: (
 
@@ -152,10 +150,9 @@
 
     $breakpoint-classes: (small medium large);
 
-
-
+// ===========================================================================================
 // 3. the grid
-// -----------
+// ===========================================================================================
 
     $grid-row-width: $global-width;
 
@@ -174,10 +171,9 @@
 
     $block-grid-max: 8;
 
-
-
+// ===========================================================================================
 // 4. base typography
-// ------------------
+// ===========================================================================================
 
     $header-font-family: $body-font-family;
 
@@ -300,10 +296,9 @@
 
     $abbr-underline: 1px dotted $black;
 
-
-
+// ===========================================================================================
 // 5. Typography Helpers
-// ---------------------
+// ===========================================================================================
 
     $lead-font-size: $global-font-size * 1.25;
 
@@ -321,9 +316,9 @@
 
     $stat-font-size: 2.5rem;
 
-
+// ===========================================================================================
 // 6. Abide
-// --------
+// ===========================================================================================
 
 $abide-inputs: true;
 $abide-labels: true;
@@ -333,8 +328,9 @@ $input-error-color: get-color(alert);
 $input-error-font-size: rem-calc(12);
 $input-error-font-weight: $global-weight-bold;
 
+// ===========================================================================================
 // 7. Accordion
-// ------------
+// ===========================================================================================
 
 $accordion-background: $white;
 $accordion-plusminus: true;
@@ -347,8 +343,9 @@ $accordion-content-border: 1px solid $light-gray;
 $accordion-content-color: $body-font-color;
 $accordion-content-padding: 1rem;
 
+// ===========================================================================================
 // 8. Accordion Menu
-// -----------------
+// ===========================================================================================
 
 $accordionmenu-padding: $global-menu-padding;
 $accordionmenu-nested-margin: $global-menu-nested-margin;
@@ -363,8 +360,9 @@ $accordionmenu-submenu-toggle-width: 40px;
 $accordionmenu-submenu-toggle-height: $accordionmenu-submenu-toggle-width;
 $accordionmenu-arrow-size: 6px;
 
+// ===========================================================================================
 // 9. Badge
-// --------
+// ===========================================================================================
 
 $badge-background: $primary-color;
 $badge-color: $white;
@@ -374,8 +372,9 @@ $badge-padding: 0.3em;
 $badge-minwidth: 2.1em;
 $badge-font-size: 0.6rem;
 
+// ===========================================================================================
 // 10. Breadcrumbs
-// ---------------
+// ===========================================================================================
 
 $breadcrumbs-margin: 0 0 $global-margin 0;
 $breadcrumbs-item-font-size: rem-calc(11);
@@ -389,8 +388,9 @@ $breadcrumbs-item-separator-item: '/';
 $breadcrumbs-item-separator-item-rtl: '\\';
 $breadcrumbs-item-separator-color: $medium-gray;
 
+// ===========================================================================================
 // 11. Button
-// ----------
+// ===========================================================================================
 
 $button-font-family: inherit;
 $button-padding: 0.85em 1em;
@@ -414,8 +414,9 @@ $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 
+// ===========================================================================================
 // 12. Button Group
-// ----------------
+// ===========================================================================================
 
 $buttongroup-margin: 1rem;
 $buttongroup-spacing: 1px;
@@ -423,8 +424,9 @@ $buttongroup-child-selector: '.button';
 $buttongroup-expand-max: 6;
 $buttongroup-radius-on-each: true;
 
+// ===========================================================================================
 // 13. Callout
-// -----------
+// ===========================================================================================
 
 $callout-background: $white;
 $callout-background-fade: 85%;
@@ -436,8 +438,9 @@ $callout-font-color-alt: $body-background;
 $callout-radius: $global-radius;
 $callout-link-tint: 30%;
 
+// ===========================================================================================
 // 14. Card
-// --------
+// ===========================================================================================
 
 $card-background: $white;
 $card-font-color: $body-font-color;
@@ -448,8 +451,9 @@ $card-border-radius: $global-radius;
 $card-padding: $global-padding;
 $card-margin-bottom: $global-margin;
 
+// ===========================================================================================
 // 15. Close Button
-// ----------------
+// ===========================================================================================
 
 $closebutton-position: right top;
 $closebutton-offset-horizontal: (
@@ -468,8 +472,9 @@ $closebutton-lineheight: 1;
 $closebutton-color: $dark-gray;
 $closebutton-color-hover: $black;
 
+// ===========================================================================================
 // 16. Drilldown
-// -------------
+// ===========================================================================================
 
 $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
@@ -481,8 +486,9 @@ $drilldown-submenu-background: $white;
 $drilldown-arrow-color: $primary-color;
 $drilldown-arrow-size: 6px;
 
+// ===========================================================================================
 // 17. Dropdown
-// ------------
+// ===========================================================================================
 
 $dropdown-padding: 1rem;
 $dropdown-background: $body-background;
@@ -496,8 +502,9 @@ $dropdown-sizes: (
   large: 400px,
 );
 
+// ===========================================================================================
 // 18. Dropdown Menu
-// -----------------
+// ===========================================================================================
 
 $dropdownmenu-arrows: true;
 $dropdownmenu-arrow-color: $anchor-color;
@@ -513,14 +520,16 @@ $dropdownmenu-border: 1px solid $medium-gray;
 $dropdown-menu-item-color-active: get-color(primary);
 $dropdown-menu-item-background-active: transparent;
 
+// ===========================================================================================
 // 19. Flexbox Utilities
-// ---------------------
+// ===========================================================================================
 
 $flex-source-ordering-count: 6;
 $flexbox-responsive-breakpoints: true;
 
+// ===========================================================================================
 // 20. Forms
-// ---------
+// ===========================================================================================
 
 $fieldset-border: 1px solid $medium-gray;
 $fieldset-padding: rem-calc(20);
@@ -561,8 +570,9 @@ $input-number-spinners: true;
 $input-radius: $global-radius;
 $form-button-radius: $global-radius;
 
+// ===========================================================================================
 // 21. Label
-// ---------
+// ===========================================================================================
 
 $label-background: $primary-color;
 $label-color: $white;
@@ -572,15 +582,17 @@ $label-font-size: 0.8rem;
 $label-padding: 0.33333rem 0.5rem;
 $label-radius: $global-radius;
 
+// ===========================================================================================
 // 22. Media Object
-// ----------------
+// ===========================================================================================
 
 $mediaobject-margin-bottom: $global-margin;
 $mediaobject-section-padding: $global-padding;
 $mediaobject-image-width-stacked: 100%;
 
+// ===========================================================================================
 // 23. Menu
-// --------
+// ===========================================================================================
 
 $menu-margin: 0;
 $menu-nested-margin: $global-menu-nested-margin;
@@ -594,8 +606,9 @@ $menu-state-back-compat: true;
 $menu-centered-back-compat: true;
 $menu-icons-back-compat: true;
 
+// ===========================================================================================
 // 24. Meter
-// ---------
+// ===========================================================================================
 
 $meter-height: 1rem;
 $meter-radius: $global-radius;
@@ -604,8 +617,9 @@ $meter-fill-good: $success-color;
 $meter-fill-medium: $warning-color;
 $meter-fill-bad: $alert-color;
 
+// ===========================================================================================
 // 25. Off-canvas
-// --------------
+// ===========================================================================================
 
 $offcanvas-sizes: (
   small: 250px,
@@ -627,8 +641,9 @@ $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0.25);
 $maincontent-class: 'off-canvas-content';
 
+// ===========================================================================================
 // 26. Orbit
-// ---------
+// ===========================================================================================
 
 $orbit-bullet-background: $medium-gray;
 $orbit-bullet-background-active: $dark-gray;
@@ -642,8 +657,9 @@ $orbit-control-background-hover: rgba($black, 0.5);
 $orbit-control-padding: 1rem;
 $orbit-control-zindex: 10;
 
+// ===========================================================================================
 // 27. Pagination
-// --------------
+// ===========================================================================================
 
 $pagination-font-size: rem-calc(14);
 $pagination-margin-bottom: $global-margin;
@@ -660,8 +676,9 @@ $pagination-mobile-items: false;
 $pagination-mobile-current-item: false;
 $pagination-arrows: true;
 
+// ===========================================================================================
 // 28. Progress Bar
-// ----------------
+// ===========================================================================================
 
 $progress-height: 1rem;
 $progress-background: $medium-gray;
@@ -669,8 +686,9 @@ $progress-margin-bottom: $global-margin;
 $progress-meter-background: $primary-color;
 $progress-radius: $global-radius;
 
+// ===========================================================================================
 // 29. Prototype Arrow
-// -------------------
+// ===========================================================================================
 
 $prototype-arrow-directions: (
   down,
@@ -681,26 +699,30 @@ $prototype-arrow-directions: (
 $prototype-arrow-size: 0.4375rem;
 $prototype-arrow-color: $black;
 
+// ===========================================================================================
 // 30. Prototype Border-Box
-// ------------------------
+// ===========================================================================================
 
 $prototype-border-box-breakpoints: $global-prototype-breakpoints;
 
+// ===========================================================================================
 // 31. Prototype Border-None
-// -------------------------
+// ===========================================================================================
 
 $prototype-border-none-breakpoints: $global-prototype-breakpoints;
 
+// ===========================================================================================
 // 32. Prototype Bordered
-// ----------------------
+// ===========================================================================================
 
 $prototype-bordered-breakpoints: $global-prototype-breakpoints;
 $prototype-border-width: rem-calc(1);
 $prototype-border-type: solid;
 $prototype-border-color: $medium-gray;
 
+// ===========================================================================================
 // 33. Prototype Display
-// ---------------------
+// ===========================================================================================
 
 $prototype-display-breakpoints: $global-prototype-breakpoints;
 $prototype-display: (
@@ -711,16 +733,18 @@ $prototype-display: (
   table-cell
 );
 
+// ===========================================================================================
 // 34. Prototype Font-Styling
-// --------------------------
+// ===========================================================================================
 
 $prototype-font-breakpoints: $global-prototype-breakpoints;
 $prototype-wide-letter-spacing: rem-calc(4);
 $prototype-font-normal: $global-weight-normal;
 $prototype-font-bold: $global-weight-bold;
 
+// ===========================================================================================
 // 35. Prototype List-Style-Type
-// -----------------------------
+// ===========================================================================================
 
 $prototype-list-breakpoints: $global-prototype-breakpoints;
 $prototype-style-type-unordered: (
@@ -738,8 +762,9 @@ $prototype-style-type-ordered: (
   upper-roman
 );
 
+// ===========================================================================================
 // 36. Prototype Overflow
-// ----------------------
+// ===========================================================================================
 
 $prototype-overflow-breakpoints: $global-prototype-breakpoints;
 $prototype-overflow: (
@@ -748,8 +773,9 @@ $prototype-overflow: (
   scroll
 );
 
+// ===========================================================================================
 // 37. Prototype Position
-// ----------------------
+// ===========================================================================================
 
 $prototype-position-breakpoints: $global-prototype-breakpoints;
 $prototype-position: (
@@ -760,14 +786,16 @@ $prototype-position: (
 );
 $prototype-position-z-index: 975;
 
+// ===========================================================================================
 // 38. Prototype Rounded
-// ---------------------
+// ===========================================================================================
 
 $prototype-rounded-breakpoints: $global-prototype-breakpoints;
 $prototype-border-radius: rem-calc(3);
 
+// ===========================================================================================
 // 39. Prototype Separator
-// -----------------------
+// ===========================================================================================
 
 $prototype-separator-breakpoints: $global-prototype-breakpoints;
 $prototype-separator-align: center;
@@ -776,15 +804,17 @@ $prototype-separator-width: 3rem;
 $prototype-separator-background: $primary-color;
 $prototype-separator-margin-top: $global-margin;
 
+// ===========================================================================================
 // 40. Prototype Shadow
-// --------------------
+// ===========================================================================================
 
 $prototype-shadow-breakpoints: $global-prototype-breakpoints;
 $prototype-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),
                        0 2px 10px 0 rgba(0,0,0,.12);
 
+// ===========================================================================================
 // 41. Prototype Sizing
-// --------------------
+// ===========================================================================================
 
 $prototype-sizing-breakpoints: $global-prototype-breakpoints;
 $prototype-sizing: (
@@ -798,14 +828,16 @@ $prototype-sizes: (
   100: 100%
 );
 
+// ===========================================================================================
 // 42. Prototype Spacing
-// ---------------------
+// ===========================================================================================
 
 $prototype-spacing-breakpoints: $global-prototype-breakpoints;
 $prototype-spacers-count: 3;
 
+// ===========================================================================================
 // 43. Prototype Text-Decoration
-// -----------------------------
+// ===========================================================================================
 
 $prototype-decoration-breakpoints: $global-prototype-breakpoints;
 $prototype-text-decoration: (
@@ -814,8 +846,9 @@ $prototype-text-decoration: (
   line-through,
 );
 
+// ===========================================================================================
 // 44. Prototype Text-Transformation
-// ---------------------------------
+// ===========================================================================================
 
 $prototype-transformation-breakpoints: $global-prototype-breakpoints;
 $prototype-text-transformation: (
@@ -824,14 +857,16 @@ $prototype-text-transformation: (
   capitalize
 );
 
+// ===========================================================================================
 // 45. Prototype Text-Utilities
-// ----------------------------
+// ===========================================================================================
 
 $prototype-utilities-breakpoints: $global-prototype-breakpoints;
 $prototype-text-overflow: ellipsis;
 
+// ===========================================================================================
 // 46. Responsive Embed
-// --------------------
+// ===========================================================================================
 
 $responsive-embed-margin-bottom: rem-calc(16);
 $responsive-embed-ratios: (
@@ -839,8 +874,9 @@ $responsive-embed-ratios: (
   widescreen: 16 by 9,
 );
 
+// ===========================================================================================
 // 47. Reveal
-// ----------
+// ===========================================================================================
 
 $reveal-background: $white;
 $reveal-width: 600px;
@@ -851,8 +887,9 @@ $reveal-radius: $global-radius;
 $reveal-zindex: 1005;
 $reveal-overlay-background: rgba($black, 0.45);
 
+// ===========================================================================================
 // 48. Slider
-// ----------
+// ===========================================================================================
 
 $slider-width-vertical: 0.5rem;
 $slider-transition: all 0.2s ease-in-out;
@@ -865,8 +902,9 @@ $slider-handle-background: $primary-color;
 $slider-opacity-disabled: 0.25;
 $slider-radius: $global-radius;
 
+// ===========================================================================================
 // 49. Switch
-// ----------
+// ===========================================================================================
 
 $switch-background: $medium-gray;
 $switch-background-active: $primary-color;
@@ -881,8 +919,9 @@ $switch-paddle-offset: 0.25rem;
 $switch-paddle-radius: $global-radius;
 $switch-paddle-transition: all 0.25s ease-out;
 
+// ===========================================================================================
 // 50. Table
-// ---------
+// ===========================================================================================
 
 $table-background: $white;
 $table-color-scale: 5%;
@@ -903,8 +942,9 @@ $table-foot-font-color: $body-font-color;
 $show-header-for-stacked: false;
 $table-stack-breakpoint: medium;
 
+// ===========================================================================================
 // 51. Tabs
-// --------
+// ===========================================================================================
 
 $tab-margin: 0;
 $tab-background: $white;
@@ -920,8 +960,9 @@ $tab-content-border: $light-gray;
 $tab-content-color: $body-font-color;
 $tab-content-padding: 1rem;
 
+// ===========================================================================================
 // 52. Thumbnail
-// -------------
+// ===========================================================================================
 
 $thumbnail-border: solid 4px $white;
 $thumbnail-margin-bottom: $global-margin;
@@ -930,8 +971,9 @@ $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
 
+// ===========================================================================================
 // 53. Title Bar
-// -------------
+// ===========================================================================================
 
 $titlebar-background: $dark-nav-color;
 $titlebar-color: $white;
@@ -941,8 +983,9 @@ $titlebar-icon-color: $white;
 $titlebar-icon-color-hover: $medium-gray;
 $titlebar-icon-spacing: 0.25rem;
 
+// ===========================================================================================
 // 54. Tooltip
-// -----------
+// ===========================================================================================
 
 $has-tip-cursor: help;
 $has-tip-font-weight: $global-weight-bold;
@@ -956,8 +999,9 @@ $tooltip-pip-width: 0.75rem;
 $tooltip-pip-height: $tooltip-pip-width * 0.866;
 $tooltip-radius: $global-radius;
 
+// ===========================================================================================
 // 55. Top Bar
-// -----------
+// ===========================================================================================
 
 $topbar-padding: 0.5rem;
 $topbar-background: $light-gray;
@@ -966,8 +1010,9 @@ $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
 
+// ===========================================================================================
 // 56. Xy Grid
-// -----------
+// ===========================================================================================
 
 $xy-grid: true;
 $grid-container: $global-width;

@@ -1,8 +1,4 @@
 // stylesheet :: base elements stylesheet compiler
 
-    // the emptiness
-    body {
-
-        // background: red !important;
-
-    }
+    // body
+    @import 'body';

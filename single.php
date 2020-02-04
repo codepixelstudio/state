@@ -1,24 +1,27 @@
-<?php
-/**
- * The template for displaying all single posts and attachments
- *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<?php get_template_part( 'components/content/content.featured.image' ); ?>
 
-<?php get_template_part( 'components/featured-image' ); ?>
 <div class="main-container">
+
 	<div class="main-grid">
+
 		<main class="main-content">
+
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'components/content', '' ); ?>
+
+				<?php get_template_part( 'components/content/content.base' ); ?>
+
 				<?php the_post_navigation(); ?>
-				<?php comments_template(); ?>
+
 			<?php endwhile; ?>
+
 		</main>
-		<?php get_sidebar(); ?>
+
+		<?php // get_sidebar(); ?>
+
 	</div>
+
 </div>
-<?php get_footer();
+
+<?php get_footer(); ?>

@@ -51,6 +51,40 @@
 
         }
 
+        // dark UI
+        .dark-ui & {
+
+            // svg
+            .brand-icon {
+
+                .brand-fill {
+
+                    fill: $dark;
+                    fill-opacity: 0.625;
+
+                }
+
+            }
+
+        }
+
+        // lite UI
+        .lite-ui & {
+
+            // svg
+            .brand-icon {
+
+                .brand-fill {
+
+                    fill: $g140;
+                    fill-opacity: 1.000;
+
+                }
+
+            }
+
+        }
+
         // svg
         .brand-icon {
 
@@ -68,13 +102,6 @@
             .path {
 
                 transition: all 220ms linear 0ms;
-
-            }
-
-            .brand-fill {
-
-                fill: $dark;
-                fill-opacity: 0.625;
 
             }
 
@@ -108,9 +135,21 @@
 
         padding: 1rem 0 1rem 0;
 
-        color: white;
-
         text-decoration: none;
+
+        // dark UI
+        .dark-ui & {
+
+            @include color( white, 0.000 );
+
+        }
+
+        // lite UI
+        .lite-ui & {
+
+            @include color( $g140, 0.000 );
+
+        }
 
         #brand-state-text {
 
@@ -122,24 +161,19 @@
 
             @include font( $industry, 1.125rem, 700 );
 
-            letter-spacing: 0.015em;
+            @include text( $up, left );
 
-            text: {
-
-                align: left;
-                transform: $up;
-
-            }
-
-            .brand-desktop {
+            // linear
+            &.linear {
 
                 height: 2rem;
 
-                @include font( inherit, 1.25rem, inherit );
+                @include font( inherit, 1.25rem, 700 );
 
-                @include typo( 2rem, 0.045em );
+                @include typo( 2rem, 0.025em );
 
-                @include breakpoint ( small only ) {
+                // line break
+                br {
 
                     @include hide;
 
@@ -147,37 +181,36 @@
 
             }
 
-            .brand-mobile {
+            // stack
+            &.stack {
+
+                @include typo( 1.25rem, 0.025em );
+
+            }
+
+            // mobile
+            .mobile {
 
                 @include hide;
 
-                font: {
-
-                    size: 0.875rem;
-
-                }
+                @include font( $industry, 1.75rem, 700 );
 
                 letter-spacing: 0.035em;
 
+                // mobile
                 @include breakpoint ( small only ) {
 
-                    @include flex-h-s-v-c( true );
+                    @include flex-h-c-v-c( false );
 
                 }
 
-                .acronym {
+            }
 
-                    // @include hide;
+            // desktop
+            .desktop {
 
-                    font: {
-
-                        size: 1.75rem;
-
-                    }
-
-                }
-
-                .stack {
+                // mobile
+                @include breakpoint ( small only ) {
 
                     @include hide;
 

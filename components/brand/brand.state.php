@@ -2,30 +2,24 @@
 <!-- brand.state -->
 <a href="https://www.colostate.edu/" id="brand-state" class="brand-link">
 
-    <h1 id="brand-state-text">
+    <h1 id="brand-state-text" class="stack">
 
-        <span class="brand-desktop">
+        <!-- desktop -->
+        <span class="desktop">
 
-            colorado state university
-
-        </span>
-
-        <span class="brand-mobile">
-
-            <span class="stack">
-
-                colorado state<br />
-                university
-
-            </span>
-
-            <span class="acronym">
-
-                CSU
-
-            </span>
+            colorado state<br />
+            university
 
         </span>
+        <!-- END desktop -->
+
+        <!-- mobile -->
+        <span class="mobile">
+
+            CSU
+
+        </span>
+        <!-- END mobile -->
 
     </h1>
 
